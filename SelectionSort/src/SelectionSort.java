@@ -3,8 +3,8 @@ public class SelectionSort {
 
 	
 	
-	public static void sSort(double[] a){
-		
+	public static void sSort(double[] a){  //at every step the algorithm searches for the minimum in the subarray begenning from the current position and ending at the last position and swaps it with the current position
+		                                   //it doesn't check for minimum in the whole array for the reason that, at every step, the subarray starting from position 0 and ending at the current position -1, is already sorted
 		for (int i = 0; i<a.length-1;i++){
 			for(int j = i+1;j<a.length;j++)
 				if(a[j]<a[i]){
